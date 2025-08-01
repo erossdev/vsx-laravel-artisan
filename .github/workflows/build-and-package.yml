@@ -34,9 +34,9 @@ jobs:
         run: vsce package --no-dependencies --no-yarn
 
       - name: Upload VSIX artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: laravel-artisan.vsix
+          name: laravel-artisan
           path: '*.vsix'
 
       - name: Create Release
